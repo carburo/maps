@@ -1,4 +1,3 @@
-// import "leaflet/dist/leaflet.css";
 import { useEffect } from "react";
 import { MapContainer, Marker, Popup, useMap } from "react-leaflet";
 import leaflet from "leaflet";
@@ -9,7 +8,7 @@ const position = [51.505, -0.09];
 export default function Vector() {
   return (
     <MapContainer
-      style={{ height: 400 }}
+      style={{ height: "100vh" }}
       center={position}
       zoom={2}
       scrollWheelZoom={false}

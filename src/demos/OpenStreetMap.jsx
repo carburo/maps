@@ -1,4 +1,3 @@
-// import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 const position = [51.505, -0.09];
@@ -6,7 +5,7 @@ const position = [51.505, -0.09];
 function OpenStreetMap() {
   return (
     <MapContainer
-      style={{ height: 400 }}
+      style={{ height: "100vh" }}
       center={position}
       zoom={13}
       scrollWheelZoom={false}
