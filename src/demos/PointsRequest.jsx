@@ -7,7 +7,7 @@ import useSWR from "swr";
 const origin = [51.505, -0.09];
 
 export default function PointsRequest() {
-  const { data: points } = useSWR("/api/points", getData);
+  const { data: points } = useSWR("/api/points", getData, { fallbackData: [] });
 
   // const [points, setPoints] = useState([]);
   // useEffect(() => {
