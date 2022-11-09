@@ -3,6 +3,7 @@ import OpenStreetMap from "./demos/OpenStreetMap";
 import Vector from "./demos/Vector";
 // import "leaflet/dist/leaflet.css";
 import "./App.css";
+import PointsRequest from "./demos/PointsRequest";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
     path: "/vector",
     element: <Vector />,
   },
+  {
+    path: "/request",
+    element: <PointsRequest />,
+  },
 ]);
 
 function Home() {
@@ -29,6 +34,9 @@ function Home() {
         </li>
         <li>
           <Link to="/vector">Vector</Link>
+        </li>
+        <li>
+          <Link to="/request">Requests</Link>
         </li>
       </ul>
     </>
